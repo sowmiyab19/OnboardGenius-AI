@@ -1,0 +1,273 @@
+2026-07-04 16:25:23,670 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 16:25:23,774 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 16:27:47,231 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 16:27:47,238 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 16:28:24,017 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 16:28:24,033 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 16:29:10,215 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 16:29:10,218 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 16:36:47,711 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 16:36:47,731 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 16:37:56,850 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 16:37:56,862 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 16:42:34,789 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 16:42:34,814 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 16:45:35,234 [INFO] OnboardGenius: Frontend mounted successfully.
+2026-07-04 16:45:35,237 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 16:45:35,254 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 16:46:16,410 [INFO] OnboardGenius: Frontend mounted successfully.
+2026-07-04 16:46:16,425 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 16:46:16,458 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 16:47:32,182 [WARNING] passlib.handlers.bcrypt: (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-07-04 16:47:32,354 [ERROR] OnboardGenius: Unhandled error: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\middleware\cors.py", line 148, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 2596, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\OneDrive\Desktop\Employee Onboarding Agent\OnboardGenius AI\backend\routers\auth.py", line 22, in register
+    return user_service.create_user(db=db, user=user_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\OneDrive\Desktop\Employee Onboarding Agent\OnboardGenius AI\backend\services\user_service.py", line 17, in create_user
+    hashed_pwd = get_password_hash(user.password)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\OneDrive\Desktop\Employee Onboarding Agent\OnboardGenius AI\backend\auth\auth.py", line 32, in get_password_hash
+    return pwd_context.hash(password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+         ^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2026-07-04 16:49:04,366 [INFO] OnboardGenius: Frontend mounted successfully.
+2026-07-04 16:49:04,368 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 16:49:04,377 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 16:50:09,490 [INFO] OnboardGenius: Frontend mounted successfully.
+2026-07-04 16:50:09,491 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 16:50:09,497 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 16:52:48,938 [WARNING] passlib.handlers.bcrypt: (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-07-04 16:52:49,050 [ERROR] OnboardGenius: Unhandled error: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\middleware\cors.py", line 148, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\starlette\concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 2596, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\OneDrive\Desktop\Employee Onboarding Agent\OnboardGenius AI\backend\routers\auth.py", line 22, in register
+    return user_service.create_user(db=db, user=user_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\OneDrive\Desktop\Employee Onboarding Agent\OnboardGenius AI\backend\services\user_service.py", line 17, in create_user
+    hashed_pwd = get_password_hash(user.password)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\OneDrive\Desktop\Employee Onboarding Agent\OnboardGenius AI\backend\auth\auth.py", line 32, in get_password_hash
+    return pwd_context.hash(password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+         ^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2026-07-04 17:00:20,723 [INFO] OnboardGenius: Frontend mounted successfully.
+2026-07-04 17:00:20,726 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 17:00:20,742 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 17:01:09,967 [INFO] OnboardGenius: Frontend mounted successfully.
+2026-07-04 17:01:09,968 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 17:01:09,971 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 17:06:55,412 [INFO] OnboardGenius: Frontend mounted successfully.
+2026-07-04 17:06:55,417 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 17:06:55,426 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 17:07:30,688 [INFO] OnboardGenius: Frontend mounted successfully.
+2026-07-04 17:07:30,690 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 17:07:30,693 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 17:11:24,520 [WARNING] passlib.handlers.bcrypt: (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-07-04 23:01:08,271 [INFO] OnboardGenius: Frontend mounted successfully.
+2026-07-04 23:01:08,284 [INFO] OnboardGenius: Initializing database tables...
+2026-07-04 23:01:08,315 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-04 23:05:19,275 [WARNING] passlib.handlers.bcrypt: (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-07-05 09:43:40,180 [INFO] OnboardGenius: Frontend mounted successfully.
+2026-07-05 09:43:40,183 [INFO] OnboardGenius: Initializing database tables...
+2026-07-05 09:43:40,199 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-05 09:44:08,727 [WARNING] passlib.handlers.bcrypt: (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-07-05 10:19:11,795 [INFO] OnboardGenius: Frontend mounted successfully.
+2026-07-05 10:19:11,800 [INFO] OnboardGenius: Initializing database tables...
+2026-07-05 10:19:11,913 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-05 10:54:34,307 [WARNING] passlib.handlers.bcrypt: (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\sowmi\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
