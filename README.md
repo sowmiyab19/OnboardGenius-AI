@@ -150,11 +150,11 @@ Open `index.html` using Live Server or serve the frontend with your preferred we
 
 **Sowmiya**
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/sowmiyab19
 
-LinkedIn: https://linkedin.com/in/yourprofile
+LinkedIn: https://linkedin.com/in/sowmiya-b-1235b7358
 
-Email: yourmail@example.com
+Email: sowmib9@gmail.com
 
 ---
 
