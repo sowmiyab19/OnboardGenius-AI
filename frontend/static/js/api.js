@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000/api";
+const BASE_URL = "https://onboardgenius-ai.onrender.com/api";
 
 const API = {
     // Shared headers helper
