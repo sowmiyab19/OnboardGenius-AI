@@ -108,7 +108,7 @@ FRONTEND_DIR = "frontend"
 
 if os.path.exists(FRONTEND_DIR):
     app.mount(
-        "/",
+        "/frontend",
         StaticFiles(directory=FRONTEND_DIR, html=True),
         name="frontend",
     )
