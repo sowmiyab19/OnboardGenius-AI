@@ -271,3 +271,12 @@ Traceback (most recent call last):
     version = _bcrypt.__about__.__version__
               ^^^^^^^^^^^^^^^^^
 AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-07-11 10:29:17,692 [INFO] OnboardGenius: Frontend mounted successfully.
+2026-07-11 10:29:17,712 [INFO] OnboardGenius: Initializing database tables...
+2026-07-11 10:29:17,778 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-11 10:29:33,151 [INFO] OnboardGenius: Frontend mounted successfully.
+2026-07-11 10:29:33,163 [INFO] OnboardGenius: Initializing database tables...
+2026-07-11 10:29:33,186 [INFO] OnboardGenius: Database tables initialized successfully!
+2026-07-11 10:32:26,808 [INFO] OnboardGenius: Frontend mounted successfully.
+2026-07-11 10:32:26,820 [INFO] OnboardGenius: Initializing database tables...
+2026-07-11 10:32:26,859 [INFO] OnboardGenius: Database tables initialized successfully!

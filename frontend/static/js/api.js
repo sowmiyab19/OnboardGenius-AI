@@ -1,4 +1,4 @@
-const BASE_URL = "https://onboardgenius-ai.onrender.com/api";
+const BASE_URL = API_BASE_URL;
 
 const API = {
     // Shared headers helper

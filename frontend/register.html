@@ -48,6 +48,7 @@
 
     <!-- Bootstrap 5 Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/config.js"></script>
     <script src="static/js/auth.js"></script>
     <script src="static/js/api.js"></script>
     <script src="static/js/main.js"></script>
@@ -61,7 +62,7 @@
             const role = document.getElementById("role").value;
             
             try {
-                const response = await fetch("https://onboardgenius-ai.onrender.com/api/auth/register", {
+                const response = await fetch(`${API_BASE_URL}/auth/register`, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
